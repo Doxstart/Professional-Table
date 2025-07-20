@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 </head>
-<body>
+<body class="dark-mode">
     <!-- Dark Mode Toggle -->
-    <div class="theme-toggle" id="theme-toggle">Dark Mode</div>
+    <div class="theme-toggle" id="theme-toggle" hidden>Dark Mode</div>
 
     <!-- Container -->
     <div class="container">
@@ -22,7 +22,7 @@
     </div> 
 
     <!-- Table -->
-    <table id="data-table">
+    <table id="data-table" hidden>
         <thead>
             <tr>
                 <th class="name-column">Name <i class="fas fa-sort" id="icon-0"></i></th>
@@ -66,7 +66,7 @@
     </table> 
 
     <!-- Pagination -->
-    <div class="pagination">
+    <div class="pagination" hidden>
         <button type="button" id="prev-btn" title="Previous Page">
             <i class="fas fa-chevron-left"></i>
         </button>
