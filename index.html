@@ -25,10 +25,10 @@
     <table id="data-table">
         <thead>
             <tr>
-                <th class="name-column">Name <i class="fas fas-sort" id="icon-0"></i></th>
-                <th class="email-column">Email <i class="fas fas-sort" id="icon-1"></i></th>
-                <th class="username-column">Username <i class="fas fas-sort" id="icon-2"></i></th>
-                <th class="country-column">Country <i class="fas fas-sort" id="icon-3"></i></th>
+                <th class="name-column">Name <i class="fas fa-sort" id="icon-0"></i></th>
+                <th class="email-column">Email <i class="fas fa-sort" id="icon-1"></i></th>
+                <th class="username-column">Username <i class="fas fa-sort" id="icon-2"></i></th>
+                <th class="country-column">Country <i class="fas fa-sort" id="icon-3"></i></th>
             </tr>
         </thead>
         <tbody>
@@ -67,7 +67,13 @@
 
     <!-- Pagination -->
     <div class="pagination">
-        
+        <button type="button" id="prev-btn" title="Previous Page">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <span id="page-number">1</span>
+        <button type="button" id="next-btn" title="Next Page">
+            <i class="fas fa-chevron-right"></i>
+        </button>
     </div>
 
     </div>
