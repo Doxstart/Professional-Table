@@ -46,7 +46,6 @@ body {
     height: 600px;
     position: relative;
     top: -25px;
-    border: 1px solid var(--text-color);
 }
 
 h1 {
@@ -59,4 +58,47 @@ h1 {
     left: 48%;
     font-size: 2rem;
     color: var(--primary-color);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--header-color);
+    color: var(--alt-text-color);
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: var(--header-hover-color);
+}
+
+td {
+    font-size: 0.9rem;
+}
+
+.name-column,
+.username-column,
+.country-column {
+    width: 200px;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tr:hover {
+    background-color: var(--table-hover-bg);
 }
