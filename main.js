@@ -17,7 +17,7 @@ async function fetchData() {
     spinner.style.display = 'flex';
     try {
         await new Promise(resolve => setTimeout(resolve, 1000));
-        const response = await fetch('https://randomuser.me/api/?results=50');
+        const response = await fetch('https://randomuser.me/api/?results=100');
         const json = await response.json();
         data = json.results;
         sortedData = [...data];
